@@ -1,0 +1,24 @@
+class Picture:
+    def SetInfo(self,title,image,text,date):
+        self.title=title
+        self.image=image
+        self.text=text
+        self.date=date
+        
+        
+    def show(self):
+        print("title:%s" %(self.title))
+        print("image:%s" %(self.image))
+        print("text: %s" % (self.text))
+        print("date: %s" % (self.date))
+      
+        
+ListOfPicture=[]
+Picture=Picture()
+Picture.SetInfo("pycon philippines","python image","pycon seminar","June 30-1,2012")
+ListOfPicture.append(Picture)
+
+
+for Picture in ListOfPicture:
+   Picture.show()
+        
